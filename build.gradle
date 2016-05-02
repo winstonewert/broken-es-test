@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.elasticsearch:elasticsearch:2.3.1'
+
+    testCompile 'org.elasticsearch:elasticsearch:2.3.1:tests'
+    testCompile('org.apache.lucene:lucene-test-framework:5.5.0') 
+    testCompile 'junit:junit:4.12'
+}
